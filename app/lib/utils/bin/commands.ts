@@ -5,15 +5,13 @@ import config from '../../../../config.json';
 
 // Help
 export const help = async (args: string[]): Promise<string> => {
-  const commands = Object.keys(bin).sort().join(', ');
-  var c = '';
-  for (let i = 1; i <= Object.keys(bin).sort().length; i++) {
-    if (i % 7 === 0) {
-      c += Object.keys(bin).sort()[i - 1] + '\n';
-    } else {
-      c += Object.keys(bin).sort()[i - 1] + ' ';
-    }
-  }
+  const binKeysSorted = Object.keys(bin).sort((a, b) => a.localeCompare(b));
+
+  const c = binKeysSorted.reduce((acc, key) => {
+    acc += `${key}\n`;
+    return acc;
+  }, '');
+
   return `Welcome! Here are all the available commands:
 \n${c}\n
 [tab]: trigger completion.
