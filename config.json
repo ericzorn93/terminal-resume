@@ -8,10 +8,11 @@
     "linkedin": "linkedin"
   },
   "email": "zornwebdev@gmail.com",
+  "profilePicture": "/images/profile_pic.jpeg",
   "ps1_hostname": "resume",
   "ps1_username": "ericzorn",
   "repo": "https://github.com/ericzorn93/terminal-resume",
-  "resume_url": "https://upload.wikimedia.org/wikipedia/commons/c/cc/Resume.pdf",
+  "resume_url": "/resumes/ericzorn_resume.pdf",
   "donate_urls": {},
   "colors": {
     "light": {

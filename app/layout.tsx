@@ -8,7 +8,7 @@ interface AppLayoutProps {
 const AppLayout = ({ children }: AppLayoutProps) => {
   const now = new Date();
   const year = now.getFullYear();
-  const titleText = `Eric Zorn | Resume ${year}`;
+  const titleText = `Eric Zorn - Senior Software Engineer | Resume ${year}`;
 
   return (
     <html lang="en">
