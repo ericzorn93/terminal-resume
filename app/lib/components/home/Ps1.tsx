@@ -1,5 +1,5 @@
 import React from 'react';
-import config from '../../config.json';
+import config from '@root/config.json';
 
 export const Ps1 = () => {
   return (

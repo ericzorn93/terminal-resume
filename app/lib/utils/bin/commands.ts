@@ -1,7 +1,7 @@
 // List of commands that do not require API calls
 
 import * as bin from './index';
-import config from '../../../config.json';
+import config from '../../../../config.json';
 
 // Help
 export const help = async (args: string[]): Promise<string> => {
@@ -141,14 +141,11 @@ export const sudo = async (args?: string[]): Promise<string> => {
 // Banner
 export const banner = (args?: string[]): string => {
   return `
-█████        ███                       ███████████                                   
-░░███        ░░░                       ░█░░░███░░░█                                   
- ░███        ████  █████ █████  ██████ ░   ░███  ░   ██████  ████████  █████████████  
- ░███       ░░███ ░░███ ░░███  ███░░███    ░███     ███░░███░░███░░███░░███░░███░░███ 
- ░███        ░███  ░███  ░███ ░███████     ░███    ░███████  ░███ ░░░  ░███ ░███ ░███ 
- ░███      █ ░███  ░░███ ███  ░███░░░      ░███    ░███░░░   ░███      ░███ ░███ ░███ 
- ███████████ █████  ░░█████   ░░██████     █████   ░░██████  █████     █████░███ █████
-░░░░░░░░░░░ ░░░░░    ░░░░░     ░░░░░░     ░░░░░     ░░░░░░  ░░░░░     ░░░░░ ░░░ ░░░░░ 
+                                        
+ _____     _        _____             
+ |   __|___|_|___   |__   |___ ___ ___ 
+ |   __|  _| |  _|  |   __| . |  _|   |
+ |_____|_| |_|___|  |_____|___|_| |_|_| 
 
 Type 'help' to see the list of available commands.
 Type 'sumfetch' to display summary.

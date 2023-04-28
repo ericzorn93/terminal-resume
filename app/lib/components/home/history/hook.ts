@@ -1,10 +1,13 @@
-import React from 'react';
-import { History } from './interface';
+'use client';
+
+import { useState } from 'react';
+
+import { History } from './types';
 
 export const useHistory = (defaultValue: Array<History>) => {
-  const [history, setHistory] = React.useState<Array<History>>(defaultValue);
-  const [command, setCommand] = React.useState<string>('');
-  const [lastCommandIndex, setLastCommandIndex] = React.useState<number>(0);
+  const [history, setHistory] = useState<Array<History>>(defaultValue);
+  const [command, setCommand] = useState<string>('');
+  const [lastCommandIndex, setLastCommandIndex] = useState<number>(0);
 
   return {
     history,

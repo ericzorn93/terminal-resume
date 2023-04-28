@@ -1,5 +1,8 @@
+'use client';
+
 import React from 'react';
-import { History as HistoryInterface } from './interface';
+
+import { History as HistoryInterface } from './types';
 import { Ps1 } from '../Ps1';
 
 export const History: React.FC<{ history: Array<HistoryInterface> }> = ({

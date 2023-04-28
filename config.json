@@ -1,21 +1,18 @@
 {
   "readmeUrl": "https://raw.githubusercontent.com/cveinnt/cveinnt/master/README.md",
-  "title": "LiveTerm",
-  "name": "John Doe",
-  "ascii": "liveterm",
+  "title": "Eric Zorn Resume",
+  "name": "Eric Zorn",
+  "ascii": "Eric Zorn",
   "social": {
     "github": "github",
     "linkedin": "linkedin"
   },
-  "email": "contact@email.com",
-  "ps1_hostname": "liveterm",
-  "ps1_username": "visitor",
-  "repo": "https://github.com/Cveinnt/LiveTerm",
+  "email": "zornwebdev@gmail.com",
+  "ps1_hostname": "resume",
+  "ps1_username": "ericzorn",
+  "repo": "https://github.com/ericzorn93/ericzorn-resume",
   "resume_url": "https://upload.wikimedia.org/wikipedia/commons/c/cc/Resume.pdf",
-  "donate_urls": {
-    "paypal": "https://paypal.me/cveinnt",
-    "patreon": "https://patreon.com/cveinnt"
-  },
+  "donate_urls": {},
   "colors": {
     "light": {
       "background": "#FBF1C9",
