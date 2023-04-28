@@ -41,6 +41,10 @@ export const resume = async (args: string[]): Promise<string> => {
   return 'Opening resume...';
 };
 
+export const cat = async (args: string[]): Promise<string> => {
+  return 'please use `resume` to view my resume or `readme` to view my GitHub profile.';
+};
+
 // Contact
 export const email = async (args: string[]): Promise<string> => {
   window.open(`mailto:${config.email}`);
