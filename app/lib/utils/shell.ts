@@ -7,19 +7,19 @@ export const shell = async (
   clearHistory: () => void,
   setCommand: React.Dispatch<React.SetStateAction<string>>,
 ) => {
-  const args = command.split(' ');
-  args[0] = args[0].toLowerCase();
+  const [rootCommand, ...subCommands] = command.split(' ');
+  const rootCommandLower = rootCommand.toLowerCase();
 
-  if (args[0] === 'clear') {
+  if (rootCommandLower === 'clear') {
     clearHistory();
   } else if (command === '') {
     setHistory('');
-  } else if (Object.keys(bin).indexOf(args[0]) === -1) {
+  } else if (Object.keys(bin).indexOf(rootCommandLower) === -1) {
     setHistory(
-      `shell: command not found: ${args[0]}. Try 'help' to get started.`,
+      `shell: command not found: ${rootCommandLower}. Try 'help' to get started.`,
     );
   } else {
-    const output = await bin[args[0]](args.slice(1));
+    const output = await bin[rootCommandLower](subCommands);
     setHistory(output);
   }
 
