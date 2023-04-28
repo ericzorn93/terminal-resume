@@ -90,16 +90,23 @@ export const whoami = async (args: string[]): Promise<string> => {
 };
 
 export const ls = async (args: string[]): Promise<string> => {
-  return `a
-bunch
-of
-fake
-directories`;
+  return `coffee
+video games
+golf
+travel
+tech`;
+};
+
+export const pwd = async (args: string[]): Promise<string> => {
+  return `~/ericzorn/resume`;
 };
 
 export const cd = async (args: string[]): Promise<string> => {
-  return `unfortunately, i cannot afford more directories.
-if you want to help, you can type 'donate'.`;
+  return `you are already in the coolest directory, my resume.`;
+};
+
+export const git = async (args: string[]): Promise<string> => {
+  return `if you would like to see my github, please visit <a href="https://github.com/${config.social.github}" target="_blank">my GitHub (${config.social.github})</a>`;
 };
 
 export const date = async (args: string[]): Promise<string> => {
