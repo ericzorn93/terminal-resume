@@ -1,4 +1,4 @@
-import TerminalWrapper from '@components/home/TerminalWrapper';
+import TerminalWrapper from '@lib/components/home/TerminalWrapper';
 
 const HomePage = () => {
   return <TerminalWrapper />;
