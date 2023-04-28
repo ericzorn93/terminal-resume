@@ -2,9 +2,9 @@
 
 import React from 'react';
 
-import { commandExists } from '@root/app/lib/utils/commandExists';
-import { shell } from '@root/app/lib/utils/shell';
-import { handleTabCompletion } from '@root/app/lib/utils/tabCompletion';
+import { commandExists } from '@utils/commandExists';
+import { shell } from '@utils/shell';
+import { handleTabCompletion } from '@utils/tabCompletion';
 
 import { Ps1 } from './Ps1';
 
