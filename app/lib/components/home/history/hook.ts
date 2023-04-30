@@ -17,7 +17,7 @@ export const useHistory = (defaultValue: Array<History>) => {
       setHistory([
         ...history,
         {
-          id: history.length,
+          id: crypto.randomUUID(),
           date: new Date(),
           command,
           output: value,

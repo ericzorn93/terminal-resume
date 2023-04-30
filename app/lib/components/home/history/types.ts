@@ -1,5 +1,5 @@
 export interface History {
-  id: number;
+  id: string;
   date: Date;
   command: string;
   output: string;
