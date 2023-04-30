@@ -22,6 +22,10 @@ const AppLayout = ({ children }: AppLayoutProps) => {
             name="viewport"
             content="width=device-width, initial-scale=1.0"
           />
+          <meta
+            name="description"
+            content="Eric Zorn - Senior Full-Stack Software Engineer Resume"
+          />
           <title>{titleText}</title>
         </head>
         <body>
