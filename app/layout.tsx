@@ -1,5 +1,6 @@
 import { type ReactNode } from 'react';
 import { Analytics } from '@vercel/analytics/react';
+import { SpeedInsights } from '@vercel/speed-insights/next';
 
 import '../styles/global.scss';
 
@@ -37,6 +38,7 @@ const AppLayout = ({ children }: AppLayoutProps) => {
         </body>
       </html>
       <Analytics />
+      <SpeedInsights />
     </>
   );
 };
