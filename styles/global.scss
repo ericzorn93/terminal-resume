@@ -1,5 +1,23 @@
 @use "tailwindcss" as *;
 
+// Needed for Tailwind CSS to work properly for version 4
+@theme {
+  --color-light-background: #FFFFDB;
+  --color-light-foreground: #282a36;
+  --color-light-yellow: #ffb86c;
+  --color-light-green: #50fa7b;
+  --color-light-gray: #8B6BB9;
+  --color-light-blue: #67AFC0;
+  --color-light-red: #ff5555;
+  --color-dark-background: #2E3440;
+  --color-dark-foreground: #E5E9F0;
+  --color-dark-yellow: #5E81AC;
+  --color-dark-green: #A3BE8C;
+  --color-dark-gray: #88C0D0;
+  --color-dark-blue: #EBCB8B;
+  --color-dark-red: #BF616A;
+}
+
 @font-face {
   font-family: 'Hack';
   src: url(/assets/fonts/Hack-NF.ttf);
