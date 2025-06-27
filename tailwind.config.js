@@ -1,5 +1,3 @@
-const { colors } = require('./config.json');
-
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
@@ -11,12 +9,13 @@ module.exports = {
     './src/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
-    colors: {
-      transparent: 'transparent',
-      current: 'currentColor',
-      ...colors,
+    extend: {
+      colors: {
+        transparent: 'transparent',
+        current: 'currentColor',
+        ...flattenedColors,
+      },
     },
-    extend: {},
   },
   plugins: [],
   darkMode: 'media',
