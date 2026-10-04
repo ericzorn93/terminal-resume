@@ -19,6 +19,7 @@ export const Input = ({
   setLastCommandIndex,
   clearHistory,
 }) => {
+  // Submit handler for keyboard events
   const onSubmit = async (event: React.KeyboardEvent<HTMLInputElement>) => {
     const commands: [string] = history
       .map(({ command }) => command)
